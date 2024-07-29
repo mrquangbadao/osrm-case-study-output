@@ -53,7 +53,7 @@ result.road_classification.num_lanes = math.floor(lc)
 
 - Save and re-build.
 
-1. ***Configure the Project with CMake***: Use CMake to configure the project. Make sure to specify the vcpkg toolchain file.
+3. ***Configure the Project with CMake***: Use CMake to configure the project. Make sure to specify the vcpkg toolchain file.
 
 ```bash
 mkdir build
