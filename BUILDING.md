@@ -105,3 +105,4 @@ After successfully building the OSRM backend, the output target will be under th
 ..\osrm-backend\build\Release
 ```
 
+Additionally, we can copy the 'profiles' and 'data' folder under the source code to this output build folder for a demo run.
