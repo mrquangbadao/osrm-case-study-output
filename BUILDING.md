@@ -80,7 +80,8 @@ cd vcpkg
 .\bootstrap-vcpkg.bat
 
 # Install dependencies
-.\vcpkg.exe install boost-filesystem boost-iostreams boost-program-options boost-system boost-test boost-thread tbb
+vcpkg install boost tbb lua BZIP2 EXPAT
+vcpkg integrate install
 
 # Clone OSRM backend
 git clone https://github.com/Project-OSRM/osrm-backend.git
