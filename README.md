@@ -12,7 +12,7 @@ Once you've built OSRM, you can find the output in this repository. The followin
 
    Obtain OpenStreetMap (OSM) data and ready it for OSRM usage. Download the data from [Geofabrik](https://download.geofabrik.de/) or your preferred OSM data source.
    
-   - For demonstration purposes, we're using the most recent South Korean map data from Geofabrik, which is stored in the repository's data folder.
+   - For demonstration purposes, we're using the most recent k [South Korea map data from Geofabrik](https://download.geofabrik.de/asia/south-korea-latest.osm.pbf), then put it under the data folder.
 
 2. **Set Up the Profile File**
 
