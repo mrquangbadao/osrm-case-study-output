@@ -50,4 +50,5 @@ After a successful setup, your local OSRM backend server will be operational, as
 
 ![Local South Korea OSRM Backend Server](successful-demo.png)
 
-# Running OSRM FrontEnd on Windows for a full demo run of OSRM
+## Running OSRM Frontend on Windows for a full demo run of OSRM
+(Updated soon)
