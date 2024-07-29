@@ -12,10 +12,10 @@ Currently used Visual Studio 17 2022 with C++ development features.
 3. Install vcpkg: If you haven't already, clone and bootstrap vcpkg.
 
 ```bash
-    #!/bin/bash
-    git clone https://github.com/microsoft/vcpkg.git
-    cd vcpkg
-    .\bootstrap-vcpkg.bat
+#!/bin/bash
+git clone https://github.com/microsoft/vcpkg.git
+cd vcpkg
+.\bootstrap-vcpkg.bat
 ```
 
 ## Builing From Source Step-by-Step Guide
@@ -23,37 +23,37 @@ Currently used Visual Studio 17 2022 with C++ development features.
 1. ***Install Dependencies with vcpkg***: OSRM has several dependencies that need to be installed. Use vcpkg to install them.
 
 ```bash
-    #!/bin/bash
-    cd vcpkg
-    vcpkg install boost tbb lua BZIP2 EXPAT
-    vcpkg integrate install
+#!/bin/bash
+cd vcpkg
+vcpkg install boost tbb lua BZIP2 EXPAT
+vcpkg integrate install
 ```
 
 2. ***Clone the OSRM Backend Repository***: Clone the OSRM backend repository from GitHub.
 
 ```bash
-    #!/bin/bash
-    git clone https://github.com/Project-OSRM/osrm-backend.git
-    cd osrm-backend
+#!/bin/bash
+git clone https://github.com/Project-OSRM/osrm-backend.git
+cd osrm-backend
 ```
 
 ***Noted***: There is a bug in guidance.lua file in the original source code. So, we have to fix this before building:
- - Open ..\osrm-backend\profiles\lib\guidance.lua
- - In line 112, change from: 
+- Open ..\osrm-backend\profiles\lib\guidance.lua
+- In line 112, change from: 
 
 ```c++
-    result.road_classification.num_lanes = lc
+result.road_classification.num_lanes = lc
 ```
 
 To: 
 
 ```c++
-    result.road_classification.num_lanes = math.floor(lc)
+result.road_classification.num_lanes = math.floor(lc)
 ```
 
 - Save and re-build.
 
-3. ***Configure the Project with CMake***: Use CMake to configure the project. Make sure to specify the vcpkg toolchain file.
+1. ***Configure the Project with CMake***: Use CMake to configure the project. Make sure to specify the vcpkg toolchain file.
 
 ```bash
 mkdir build
