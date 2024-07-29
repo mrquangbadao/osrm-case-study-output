@@ -49,3 +49,5 @@ Once you've built OSRM, you can find the output in this repository. The followin
 After a successful setup, your local OSRM backend server will be operational, as depicted in the image below:
 
 ![Local South Korea OSRM Backend Server](successful-demo.png)
+
+# Running OSRM FrontEnd on Windows for a full demo run of OSRM
