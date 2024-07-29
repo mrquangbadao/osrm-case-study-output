@@ -22,7 +22,7 @@ Once you've built OSRM, you can find the output in this repository. The followin
 
 3. **Select Pre-Processing Pipelines and Execute Commands in CMD**
 
-   Familiarize yourself with the pre-processing pipelines by visiting the OSRM Backend Project Wiki.
+   Familiarize yourself with the pre-processing pipelines by visiting the OSRM Backend Project [Wiki](https://github.com/Project-OSRM/osrm-backend/wiki/Running-OSRM).
 
    - For the MLD pipeline:
      
